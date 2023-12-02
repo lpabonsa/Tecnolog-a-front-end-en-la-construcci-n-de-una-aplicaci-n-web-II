@@ -1,0 +1,18 @@
+//Preparación del Proyecto:
+npm run build
+
+//Instalación de gh-pages:
+
+npm install gh-pages --save-dev
+
+//Configuración de package.json:
+
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  // ...
+}
+
+//Despliegue en GitHub Pages:
+npm run deploy
+
