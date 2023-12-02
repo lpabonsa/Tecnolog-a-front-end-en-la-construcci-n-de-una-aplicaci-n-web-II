@@ -1,0 +1,29 @@
+paths:
+  /tasks:
+    get:
+      summary: Obtiene la lista de tareas
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              example:
+                - id: 1
+                  title: "Completar informe"
+                - id: 2
+                  title: "Revisar correos"
+    post:
+      summary: Crea una nueva tarea
+      requestBody:
+        content:
+          application/json:
+            example:
+              title: "Nueva tarea"
+      responses:
+        '201':
+          description: Creado
+          content:
+            application/json:
+              example:
+                id: 3
+                title: "Nueva tarea"
