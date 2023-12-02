@@ -1,0 +1,7 @@
+/src
+  /components
+    - Home.js
+    - About.js
+    - Contact.js
+  - App.js
+  - index.js
