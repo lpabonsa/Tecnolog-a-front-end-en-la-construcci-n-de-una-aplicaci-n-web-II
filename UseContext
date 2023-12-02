@@ -1,0 +1,10 @@
+import React, { useContext } from 'react';
+import MyContext from './MyContext';
+
+const MyComponent = () => {
+  const valueFromContext = useContext(MyContext);
+
+  return <p>Valor del contexto: {valueFromContext}</p>;
+};
+
+export default MyComponent;
