@@ -1,0 +1,14 @@
+import React, { useState, useEffect } from 'react';
+
+const DataFetcher = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Realizar una solicitud de datos cuando el componente se monta
+    fetchData().then(result => setData(result));
+  }, []); // El segundo argumento [] indica que este efecto solo se ejecuta una vez al montar
+
+  return <p>Datos: {data}</p>;
+};
+
+export default DataFetcher;
