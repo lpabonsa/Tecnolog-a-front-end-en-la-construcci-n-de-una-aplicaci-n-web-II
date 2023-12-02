@@ -1,0 +1,26 @@
+// Home.js
+import React from 'react';
+
+const Home = () => {
+  return <h2>Página de Inicio</h2>;
+};
+
+export default Home;
+
+// About.js
+import React from 'react';
+
+const About = () => {
+  return <h2>Acerca de Nosotros</h2>;
+};
+
+export default About;
+
+// Contact.js
+import React from 'react';
+
+const Contact = () => {
+  return <h2>Contacta con Nosotros</h2>;
+};
+
+export default Contact;
